@@ -5,26 +5,25 @@ import { useState, useEffect } from "react";
 export default function TypingEffect() {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [currentText, setCurrentText] = useState("linkedin/in/danj-jo"); // Start text
-  const speed = isDeleting ? 50 : 100; // Typing vs Deleting speed
+  const [currentText, setCurrentText] = useState("linkedin/in/danj-jo");
+  const speed = isDeleting ? 50 : 100;
 
   useEffect(() => {
-    let i = isDeleting ? text.length - 1 : text.length + 1;
+    const i = isDeleting ? text.length - 1 : text.length + 1;
 
     const timeout = setTimeout(() => {
       setText(currentText.slice(0, i));
 
-      // If typing is complete, pause and start deleting after 1 second
+
       if (!isDeleting && i === currentText.length) {
         setTimeout(() => setIsDeleting(true), 1000);
       }
-      // If deleting is complete, pause and change the text
+
       else if (isDeleting && i === 0) {
 
         setIsDeleting(false);
-        // Switch the text after deleting
         setCurrentText((prev) => (prev === "linkedin/in/danj-jo" ? "github.com/danj-jo" : "linkedin/in/danj-jo"));
-        // Pause before retyping
+
       }
     }, speed);
 
