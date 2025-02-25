@@ -1,14 +1,14 @@
 interface projectProps {
     title: string,
-    date: string
+    stack: string
 }
-const Project = ({ title, date }: projectProps) => {
+const Project = ({ title, stack }: projectProps) => {
     return (
-        <div className="project-container">
+        <div className="">
             <a href={`projects/${title.toLowerCase()}`}>
-                <div className="mt-6 flex justify-between m-6 bg-gray-900 rounded-2xl p-6 h-16 opacity-25 text-white items-center hover:bg-[#9e9e9e] hover:opacity-100 transition-colors duration-300 ease-in ">
+                <div className="m-2 flex justify-between bg-gray-900 rounded-2xl p-6 h-8 opacity-25 text-white items-center hover:bg-[#9e9e9e] hover:opacity-100 transition-colors duration-300 ease-in ">
                     <p> {title} </p>
-                    <p> {date} </p>
+                    <p> {stack.toUpperCase()} </p>
                 </div>
             </a>
         </div>

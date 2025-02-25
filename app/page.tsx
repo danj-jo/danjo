@@ -31,13 +31,15 @@ export default function TypingEffect() {
   }, [text, isDeleting, currentText]);
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="text-white text-center text-2xl">
+    <div className="flex items-center justify-center mx-auto my-auto">
+      <div className="
+      text-white text-center text-2xl sm:w-1024 
+            text-center lg:w-96 lg:mx-auto lg: my-auto lg:mt-20 p-6 ">
         {text}
         <motion.span
           animate={{ opacity: [0, 1, 0] }}
-          transition={{ repeat: Infinity, duration: 0.8 }}
-          className="inline-block bg-white w-2 h-5 ml-1"
+          transition={{ repeat: Infinity, duration: 0.3 }}
+
         />
       </div>
     </div>
