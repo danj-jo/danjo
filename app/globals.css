@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: "spacy";
-  src: url("../public/spacy.otf");
+  font-family: "Cascadia";
+  src: url("../public/Cascadia.ttf");
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,7 +24,7 @@ html {
 }
 
 * {
-  font-family: "spacy";
+  font-family: "Cascadia";
 }
 
 body {
