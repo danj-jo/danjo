@@ -1,14 +1,14 @@
 'use client'
 import ProjectDescription from "@/components/ProjectDescription"
-import { useEffect } from "react"
 
+export default function MastermindRemix() {
+    return (
+        <>
+            <ProjectDescription description="
+        Mastermind-Remix is a full-stack rendition of the classic Mastermind game, which I initially built using pure Node.js and Express. For the full-stack version, I utilized MongoDB, TypeScript, Node.js, and React. The goal of the game is to guess a randomly generated number combination within 10 attempts, with the combination fetched through an API.The game offers three difficulty levels—easy, medium, and hard—each increasing the number of digits in the combination to guess. Additionally, the game includes user authentication and authorization, ensuring a secure and engaging experience.
+      "
+                url="https://github.com/danj-jo/mastermind-remix" />
 
-export default function Test() {
-    useEffect(() => {
-        fetch("https://api.github.com/users/danj-jo/repos").then(data => data.json())
-            .then(response => console.log(response))
-    })
-
-    return <button> Test</button>
-
+        </>
+    )
 }
