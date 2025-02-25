@@ -1,7 +1,7 @@
 import Project from "./project"
 export default function Projects() {
     return (
-        <div className="flex-col justify-center items-center lg:m-24">
+        <div className="flex-col justify-center items-center sm:m-24 lg:m-24">
             <Project title="VELMA" stack="Typescript, React, Node.JS, Espresso" />
             <Project title="TIKURI-CO" stack="Typescript, React, Node.JS, MongoDB" />
             <Project title="MASTERMIND-REMIX" stack="Typescript, React, Node.JS, MongoDB" />
