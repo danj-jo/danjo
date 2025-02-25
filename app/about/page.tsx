@@ -11,7 +11,7 @@ export default function About() {
                 </p>
                 <br />
                 <p>
-                    Before transitioning into tech, I spent six years as a barber, honing my eye for detail, creativity, and client-first problem-solving—skills I now bring into every product I build.
+                    Before transitioning into tech, he spent six years as a barber, honing his eye for detail, creativity, and client-first problem-solving— skills that he now brings into every product he builds.
                 </p>
                 <div className="
                 bg-gray-900 text-white rounded-2xl shadow-m p-8 flex justify-between">
