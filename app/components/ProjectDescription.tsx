@@ -4,9 +4,10 @@ interface descriptionProps {
 }
 const ProjectDescription: React.FC<descriptionProps> = ({ description, url }: descriptionProps) => {
     return (
-        <div className="sm:w-1024 
-            text-center lg:w-96 lg:mx-auto lg: my-auto lg:mt-20 p-6 bg-gray-900 opacity-50 text-white rounded-2xl shadow-md
-            flex-col flex-col justify-around">
+        <div className="flex items-center justify-center h-screen overflow-hidden ">
+        <div className="sm:w-96 
+        text-center w-96 p-6 bg-gray-900 opacity-50 text-white rounded-2xl shadow-md
+        ">
             <p>
                 {description}
             </p>
@@ -15,6 +16,7 @@ const ProjectDescription: React.FC<descriptionProps> = ({ description, url }: de
             }}> Repo </button>
 
 
+        </div>
         </div>
     )
 }
