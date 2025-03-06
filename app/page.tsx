@@ -34,7 +34,7 @@ export default function TypingEffect() {
     <div className="h-screen flex items-center justify-center mx-auto my-auto">
       <div className="
       text-white text-center text-2xl sm:w-1024 
-            text-center lg:w-96 lg:mx-auto lg: my-auto lg:mt-20 p-6 ">
+            text-center lg:w-96 ">
         {text}
         <motion.span
           animate={{ opacity: [0, 1, 0] }}
