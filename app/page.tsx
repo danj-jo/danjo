@@ -31,7 +31,7 @@ export default function TypingEffect() {
   }, [text, isDeleting, currentText]);
 
   return (
-    <div className="flex items-center justify-center mx-auto my-auto">
+    <div className="h-screen flex items-center justify-center mx-auto my-auto">
       <div className="
       text-white text-center text-2xl sm:w-1024 
             text-center lg:w-96 lg:mx-auto lg: my-auto lg:mt-20 p-6 ">

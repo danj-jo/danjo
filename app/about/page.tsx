@@ -2,10 +2,10 @@ import Card from "@/components/Card"
 import Image from "next/image"
 export default function About() {
     return (
-        <>
-            <div className="sm:w-96 
-            text-center w-96 mx-auto  my-auto sm:mt-24 md:mt-20 p-6 bg-gray-900 opacity-50 text-white rounded-2xl shadow-md
-            ">
+        <div className="flex items-center justify-center h-screen overflow-hidden ">
+        <div className="sm:w-96 
+        text-center w-96 p-6 bg-gray-900 opacity-50 text-white rounded-2xl shadow-md
+        overflow-hidden">
                 <p>
                     Dana Jones is a dedicated, self-taught engineer with industry experience building frontend and fullstack applications. His passion for design and seamless user experiences stems from a deep appreciation for art, aesthetics, and real-world utility.
                 </p>
@@ -30,6 +30,6 @@ export default function About() {
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }

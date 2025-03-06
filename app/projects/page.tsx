@@ -1,7 +1,7 @@
 import Project from "./project"
 export default function Projects() {
     return (
-        <div className="flex-col justify-center items-center sm: sm:m-24">
+        <div className=" h-screen flex flex-col justify-center p-6">
             <Project title="VELMA" stack="MERN, Espresso" />
             <Project title="TIKURI-CO" stack="MERN" />
             <Project title="MASTERMIND-REMIX" stack="MERN" />
